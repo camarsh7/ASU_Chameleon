@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">        
+        <!-- Chase CSS mockup -->
+        <link href="css/chase.css" rel="stylesheet" media="all" type="text/css">
+
+        <title>ASU Dashboard | Energy</title>
+		
+        <script src="js/showLocations.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDH7AZ8NiyjbQ5OJn_3qEUXWy6t-kQL2Y"></script>		
+	</head>
+
+	<body>
+		<header>
+            <div id="headerlogo">
+                <span class="helper"></span>
+                <img src="images/asu_logo.png" alt="Arizona State University" id="logo">
+            </div>
+            <div id="titles">
+                <span class="helper"></span>
+                <div class="innertitles">
+                    <h1>ASU Energy Management</h1>
+                    <h2>Overview</h2>
+                </div>
+            </div>
+            <div id="headlinks">
+                <a class="logout overview" href="overview.html" title="Log Out"><img src="images/icon_logout.svg" alt="Log Out"></a>
+                <div id="appsettings" title="App settings"></div>
+            </div>
+        </header>		
+        
+        <div id="app-wrapper">
+            <nav>		
+                <ul>
+                    <li id="home">
+                        <a href="dashboard.html" title="Home"><span class="helper"></span><span>Home</span></a>
+                    </li>
+                    
+                    <li id="energy" class="selected">
+                        <a href="energy.html" title="Energy"><span class="helper"></span><span>Energy</span></a>
+                    </li>
+                    
+                    <li id="hvac">
+                        <a href="hvac.html" title="HVAC"><span class="helper"></span><span>HVAC</span></a>
+                    </li>
+
+                    <li id="lighting">
+                        <a href="lighting.html" title="Lighting"><span class="helper"></span><span>Lighting</span></a>
+                    </li>
+                    
+                    <li id="av-equip">
+                        <a href="avequipment.html" title="A/V Equipment"><span class="helper"></span><span>A/V Equipment</span></a>
+                    </li>
+                    
+                    <li id="shades">
+                        <a href="shades.html" title="Shades"><span class="helper"></span><span>Shades</span></a>
+                    </li>
+                    
+                    <li id="settings">
+                        <a href="#" title="Settings"><span class="helper"></span><span>Settings</span></a>
+                    </li>
+
+                    <li id="schedule">
+                        <a href="#" title="View Schedule"><span class="helper"></span><span>Schedule</span></a>
+                    </li>
+
+                    
+                    <div class="cline"></div>
+                </ul>
+                <div class="shadowbar"></div>
+            </nav>
+            <div class="homecontent">
+                <img src="images/energytab.png">
+            </div>
+            
+		</div>
+    </body>
+</html>

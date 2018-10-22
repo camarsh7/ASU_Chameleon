@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">        
+        <!-- Chase CSS mockup -->
+        <link href="css/chase.css" rel="stylesheet" media="all" type="text/css">
+
+        <title>ASU Overview</title>
+		
+        <script src="js/showLocations.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDH7AZ8NiyjbQ5OJn_3qEUXWy6t-kQL2Y"></script>		
+	</head>
+
+	<body>
+		<header>
+            <div id="headerlogo">
+                <span class="helper"></span>
+                <img src="images/asu_logo.png" alt="Arizona State University" id="logo">
+            </div>
+            <div id="titles">
+                <span class="helper"></span>
+                <div class="innertitles">
+                    <h1>ASU Energy Management</h1>
+                    <h2>Overview</h2>
+                </div>
+            </div>
+            <div id="headlinks">
+                <a class="logout overview" href="#" title="Log Out"><img src="images/icon_logout.svg" alt="Log Out"></a>
+                <div id="appsettings" title="App settings"></div>
+            </div>
+        </header>		
+        
+        <div id="app-wrapper">
+			<div class="main">
+				<div id="tagsearch">
+					<input name="searchbox" id="searchbox" placeholder="search by tag">
+				</div>
+                <div id="brandmap" style="height: 660px; overflow: hidden;">
+                    <img src="images/testmap.png" id="map-image" style="width: 150%; height: 100%; margin-right: 100px;">
+                    
+                </div>
+                
+				
+                <div id="locations" style="height: 660px;">
+                    
+                    <div id="6" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Tempe</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                        
+                                        <img src="images/icon_alarm_caution.svg" class="alarm-icon caution-icon" alt="Caution" title="Caution">
+                                        <img src="images/icon_alarm_critical.svg" class="alarm-icon critical-icon" alt="Alarm" title="Critical">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar caution">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                            
+                            <div class="tier2bar critical">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    <div id="7" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>West</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+				    <div id="1" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <!-- <img src=""> -->
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Polytechnic</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars">
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="AZ" type="hidden">
+                                <input class="tag tag3" value="Mesa" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Mesa</span>
+                                    <span class="store-number">PT-021</span>
+                                    <span class="address">Usa, AZ, Mesa, 5999 S. Backus Mall</span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div>  
+                            </div>
+                            
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="AZ" type="hidden">
+                                <input class="tag tag3" value="Mesa" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Mesa</span>
+                                    <span class="store-number">PT-027</span>
+                                    <span class="address">Usa, AZ, Mesa, 5988 S. Backus Mall</span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div>  
+                            </div>
+                            
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="AZ" type="hidden">
+                                <input class="tag tag3" value="Mesa" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Mesa</span>
+                                    <span class="store-number">PT-014</span>
+                                    <span class="address">Usa, AZ, Mesa, 7290 E. Sun Devil Mall</span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div>  
+                            </div>
+                            
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="AZ" type="hidden">
+                                <input class="tag tag3" value="Mesa" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Mesa</span>
+                                    <span class="store-number">PT-033</span>
+                                    <span class="address">Usa, AZ, Mesa, 7271 E. Sonoran Arroyo Mall</span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="2" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Downtown Phoenix</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                       
+                                        <img src="images/icon_alarm_critical.svg" class="alarm-icon critical-icon" alt="Alarm" title="Critical">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar critical">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div id="3" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Lake Havasu</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                        
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="4" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Skysong</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                       
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="5" class="tier1bar">
+                        <table class="labelrow" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td class="brandlogo">
+                                        <img src="">
+                                    </td>
+                                    <td class="brandname">
+                                        <h2>Research Park</h2>
+                                    </td>
+                                    <td class="column">
+                                        <span class="tier1-arrow-icon open"></span>
+                                    </td>
+                                    <td class="column information-column">
+                                        
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="tier2bars" style="height: 51px;">
+                            <div class="tier2bar">
+                                <input class="tag tag1" value="USA" type="hidden">
+                                <input class="tag tag2" value="NE" type="hidden">
+                                <input class="tag tag3" value="Lincoln" type="hidden">
+                                <input class="latitude" value="40.8173763" type="hidden">
+                                <input class="longitude" value="-96.70959789999999" type="hidden">
+                                <input class="deviceid" value="BLU-00106" type="hidden">
+                                <input class="brandname" value="Blue Sushi Sake Grill" type="hidden">
+                                <input class="storeid" value="377" type="hidden">
+                                <input class="brandid" value="43" type="hidden">
+                                
+                                <div class="tier2name">
+                                    <span class="tagbutton tag1">USA</span>
+                                    <span class="tagbutton tag2">AZ</span>
+                                    <span class="tagbutton tag3">Phoenix</span>
+                                    <span class="store-number">11111</span>
+                                    <span class="address">USA, AZ, Phoenix, 111 E. Test Rd </span>
+                                </div>
+                                
+                                <div class="column large-column">
+                                    <!--<span class="schedule-check"></span>-->
+                                </div>
+                                
+                                <div class="column view-location">
+                                    <a class="view-link" href="dashboard.html" title="View Location">
+                                        <img src="images/icon_view.png">
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+				<div class="cline"></div>
+			</div>
+		</div>
+    </body>
+</html>
